@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.version       = MiddlemanRatchet::VERSION
   spec.authors       = ['caedes']
   spec.email         = ['laurentromain@gmail.com']
-  spec.description   = %q{TODO: Write a gem description}
+  spec.description   = 'middleman-ratchet is an extension for the Middleman static site generator that adds support for the Ratchet prototyping mobile apps.'
   spec.summary       = spec.description
   spec.homepage      = 'https://github.com/caedes/middleman-ratchet'
   spec.license       = 'MIT'
