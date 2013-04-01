@@ -30,4 +30,4 @@ module Middleman
   end
 end
 
-Middleman::Templates.register :ratchet, Middleman::Blog::Template
+Middleman::Templates.register :ratchet, Middleman::Ratchet::Template
