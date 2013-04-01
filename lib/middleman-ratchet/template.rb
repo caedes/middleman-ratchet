@@ -19,6 +19,7 @@ module Middleman
       end
 
       def build_scaffold
+        template 'shared/config.tt', File.join(location, 'config.rb')
         directory 'source', File.join(location, 'source')
 
         empty_directory File.join(location, 'source', options[:css_dir])
