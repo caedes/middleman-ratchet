@@ -5,7 +5,7 @@ require 'middleman-ratchet/version'
 
 Gem::Specification.new do |spec|
   spec.name          = 'middleman-ratchet'
-  spec.version       = MiddlemanRatchet::VERSION
+  spec.version       = Middleman::Ratchet::VERSION
   spec.authors       = ['caedes']
   spec.email         = ['laurentromain@gmail.com']
   spec.description   = 'middleman-ratchet is an extension for the Middleman static site generator that adds support for the Ratchet prototyping mobile apps.'
@@ -20,4 +20,6 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency 'bundler', '~> 1.3'
   spec.add_development_dependency 'rake'
+
+  spec.add_dependency 'middleman-core', ['~> 3.0']
 end

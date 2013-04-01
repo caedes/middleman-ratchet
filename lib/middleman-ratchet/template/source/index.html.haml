@@ -1,0 +1,17 @@
+---
+title: Index
+---
+
+/ Make sure all your bars are the first things in your <body>
+%header.bar-title
+  %h1.title= 'Index'
+
+/ Wrap all non-bar HTML in the .content div (this is actually what scrolls)
+.content
+  .content-padded
+    %p= 'Fake Index Description'
+  %ul.list.inset
+    %li
+      = link_to 'page1.html', data: { transition: 'slide-in'} do
+        %strong= 'Page 1'
+        %span.chevron

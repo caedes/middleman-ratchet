@@ -1,0 +1,9 @@
+/ Make sure all your bars are the first things in your <body>
+%header.bar-title
+  = link_to 'Previous', 'index.html', class: 'button-prev', data: { transition: 'slide-out'}
+  %h1.title= 'Page 1'
+
+/ Wrap all non-bar HTML in the .content div (this is actually what scrolls)
+.content
+  .content-padded
+    %p= 'Fake Page 1 Description'
