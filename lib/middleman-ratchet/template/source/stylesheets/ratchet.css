@@ -1,6 +1,6 @@
 /**
  * ==================================
- * Ratchet v1.0.0
+ * Ratchet v1.0.1
  * Licensed under The MIT License
  * http://opensource.org/licenses/MIT
  * ==================================
@@ -126,11 +126,11 @@ a {
   bottom: 0;
   left: 0;
   overflow: auto;
-  background: #fff;
+  background-color: #fff;
   -webkit-transition-property: top, bottom;
           transition-property: top, bottom;
-  -webkit-transition-duration: .2s, .2s;  
-          transition-duration: .2s, .2s;  
+  -webkit-transition-duration: .2s, .2s;
+          transition-duration: .2s, .2s;
   -webkit-transition-timing-function: linear, linear;
           transition-timing-function: linear, linear;
   -webkit-overflow-scrolling: touch;
@@ -637,12 +637,13 @@ input[type="color"],
   height: 40px;
   padding: 10px;
   margin-bottom: 10px;
-  background: #fff;
+  background-color: #fff;
   border: 1px solid rgba(0, 0, 0, .2);
   border-radius: 3px;
   box-shadow: 0 1px 1px rgba(255, 255, 255, .2), inset 0 1px 1px rgba(0, 0, 0, .1);
   -webkit-appearance: none;
   box-sizing: border-box;
+  outline: none;
 }
 
 /* Fully round search input */
@@ -1128,6 +1129,32 @@ select {
   border: 1px solid #000;
   border-radius: 3px;
   -webkit-overflow-scrolling: touch;
+}/* Modals
+-------------------------------------------------- */
+.modal {
+  position: fixed; 
+  top: 0;
+  opacity: 0;
+  z-index: 11; 
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  background-color: #fff;  
+  -webkit-transform: translate3d(0, 100%, 0);
+          transform: translate3d(0, 100%, 0);
+  -webkit-transition: -webkit-transform .25s ease-in-out, opacity 1ms .25s;
+          transition:         transform .25s ease-in-out, opacity 1ms .25s;
+}
+
+/* Modal - When active
+-------------------------------------------------- */
+.modal.active {
+  opacity: 1;
+  height: 100%;
+  -webkit-transition: -webkit-transform .25s ease-in-out;
+          transition:         transform .25 ease-in-out;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
 }/* Slider styles (to be used with sliders.js)
 -------------------------------------------------- */
 
