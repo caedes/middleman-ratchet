@@ -1,6 +1,6 @@
 /**
  * ==================================
- * Ratchet v1.0.1
+ * Ratchet v1.0.2
  * Licensed under The MIT License
  * http://opensource.org/licenses/MIT
  * ==================================
@@ -502,7 +502,7 @@ a {
 /* Pad each list item and add dividers */
 .list li {
   position: relative;
-  padding: 20px 60px 20px 10px; /* Given extra right padding to accomodate counts, chevrons or buttons */
+  padding: 11px 60px 11px 10px; /* Given extra right padding to accomodate counts, chevrons or buttons */
   border-bottom: 1px solid rgba(0, 0, 0, .1);
 }
 
@@ -516,7 +516,7 @@ a {
   position: relative;
   display: block;
   padding: inherit;
-  margin: -20px -60px -20px -10px;
+  margin: -11px -60px -11px -10px;
   color: inherit;
 }
 
@@ -818,6 +818,11 @@ select {
 /* Active state for block level buttons */
 .button-block:active {
   padding: 12px 0;
+}
+
+/* Make button elements go full width when given .button-block class */
+button.button-block {
+  width: 100%;
 }
 
 /* Counts in buttons
@@ -1132,14 +1137,14 @@ select {
 }/* Modals
 -------------------------------------------------- */
 .modal {
-  position: fixed; 
+  position: fixed;
   top: 0;
   opacity: 0;
-  z-index: 11; 
+  z-index: 11;
   width: 100%;
   min-height: 100%;
   overflow: hidden;
-  background-color: #fff;  
+  background-color: #fff;
   -webkit-transform: translate3d(0, 100%, 0);
           transform: translate3d(0, 100%, 0);
   -webkit-transition: -webkit-transform .25s ease-in-out, opacity 1ms .25s;
@@ -1184,7 +1189,7 @@ select {
 .slider > ul > li {
   display: inline-block;
   vertical-align: top; /* Ensure that li always aligns to top */
-  width: 100%; 
+  width: 100%;
   height: 100%;
 }
 
