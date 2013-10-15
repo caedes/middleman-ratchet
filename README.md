@@ -9,7 +9,7 @@
 ```shell
 gem install middleman
 gem install middleman-ratchet
-middleman init --template ratchet
+middleman init project_name --template ratchet
 ```
 
 ## Run
