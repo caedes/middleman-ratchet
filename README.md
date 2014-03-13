@@ -21,15 +21,12 @@ middleman server
 ## Learn more
 
 * [Middleman](http://middlemanapp.com/)
-* [Ratchet](http://maker.github.com/ratchet/)
+* [Ratchet](http://goratchet.com/)
 
 
 ## Contributing
 
-1. Fork repository
-2. Create a branch following a [successfull branching model](http://nvie.com/posts/a-successful-git-branching-model/)
-3. Write your feature/fix
-4. Pull request
+See [CONTRIBUTING](https://github.com/caedes/middleman-ratchet/blob/master/CONTRIBUTING.md)
 
 ## Licence
 
