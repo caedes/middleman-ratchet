@@ -21,7 +21,7 @@ middleman server
 ## Learn more
 
 * [Middleman](http://middlemanapp.com/)
-* [Ratchet](http://maker.github.com/ratchet/)
+* [Ratchet](http://goratchet.com/)
 
 
 ## Contributing
